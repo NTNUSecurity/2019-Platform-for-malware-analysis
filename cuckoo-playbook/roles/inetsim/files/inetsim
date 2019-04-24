@@ -1,0 +1,12 @@
+# This is a configuration file for /etc/init.d/inetsim; it allows you to
+# perform common modifications to the behavior of the internet simulation
+# suite
+
+# Options to pass to inetsim.
+DAEMON_ARGS=""
+
+# Whether or not to run the internet simulation suite; set to 0 to disable.
+ENABLED=1
+
+# Wether or not to run the automatic configuration script; set to 0 to disable.
+AUTO_CONF=0

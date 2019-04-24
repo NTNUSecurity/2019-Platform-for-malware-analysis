@@ -1,0 +1,13 @@
+[Unit]
+Description=Cuckoo Sandbox Service
+After=network.target cuckoo_rooter.service
+
+[Service]
+ExecStart=/opt/cuckoo/bin/cuckoo
+Restart=on-failure
+User=cuckoo
+Group=cuckoo
+WorkingDirectory=/home/cuckoo/.cuckoo
+
+[Install]
+WantedBy=multi-user.target
